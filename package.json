@@ -1,0 +1,28 @@
+{
+  "name": "perf-node-cap",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^4",
+    "@sap/hana-client": "^2.6.54",
+    "express": "^4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npx cds run"
+  },
+  "cds": {
+    "hana": {
+      "deploy-format": "hdbtable"
+    },
+    "requires": {
+      "db": {
+        "kind": "hana",
+        "credentials": {}
+      }
+    }
+  }
+}
